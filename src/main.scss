@@ -1,0 +1,57 @@
+//Base
+@import "../src/assets/global-scss/base/base.scss";
+@import "../src/assets/global-scss/base/helper.scss";
+@import "../src/assets/global-scss/base/layout.scss";
+@import "../src/assets/global-scss/base/main-general.scss";
+
+//Setup
+@import "../src/assets/global-scss/setup/typography.scss";
+@import "../src/assets/global-scss/setup/var.scss";
+@import "../src/assets/global-scss/setup/functions.scss";
+
+//Pages
+@import "../src/pages/homepage/homepage.scss";
+@import "../src/pages/about/about.scss";
+@import "../src/pages/learn-tennis/learn-tennis.scss";
+@import "../src/pages/club-manager/club-manager/club-components/club-courts/club-courts.scss";
+@import "../src/pages/dashboard/dashboard.scss";
+@import "../src/pages/contact-us/contact-us.scss";
+@import "../src/pages/signup/signup.scss";
+@import "../src/pages/edit-event/edit-event.scss";
+@import "../src/pages/login/login.scss";
+@import "../src/pages/new-reservation/new-reservation.scss";
+@import "../src/pages/club-manager/club-manager/club-components/punch-cards/punch-cards.scss";
+@import "../src/pages/user-profile/user-profile.scss";
+@import "../src/pages/user-reservations/user-reservations.scss";
+
+//Components
+@import "../src/components/app-footer/app-footer.scss";
+@import "../src/components/loader.scss";
+@import "../src/components/header-sections/app-header/app-header.scss";
+@import "../src/components/header-sections/profile-menu/profile-menu.scss";
+@import "../src/components/header-sections/side-menu/side-menu.scss";
+@import "../src/components/homepage-sections/children-practice/children-practice.scss";
+@import "../src/components/homepage-sections/home-hero/home-hero.scss";
+@import "../src/components/reservation-list/reservation-list.scss";
+@import "../src/components/homepage-sections/question-answer/question-answer.scss";
+@import "../src/components/homepage-sections/testimonials/testimonials.scss";
+@import "../src/components/homepage-sections/dudi-info/dudi-info.scss";
+@import "../src/components/homepage-sections/coaches/coaches.scss";
+@import "../src/components/homepage-sections/coaches/coaches-preview/coaches-preview.scss";
+@import "../src/components/homepage-sections/coaches/coaches-mobile/coaches-mobile.scss";
+
+//Club Components
+@import "../src/pages/club-manager/club-manager/club-components/about-club/about-club.scss";
+@import "../src/pages/club-manager/club-manager.scss";
+@import "../src/pages/club-manager/club-manager/club-components/schedule-day/schedule-day.scss";
+@import "../src/pages/club-manager/club-manager/club-components/club-classes/club-classes.scss";
+@import "../src/pages/club-manager/club-manager/club-components/club-hours/club-hours.scss";
+@import "../src/pages/club-manager/club-manager/club-components/club-settings/club-settings.scss";
+@import "../src/pages/club-manager/club-manager/club-components/club-courts/club-courts.scss";
+@import "../src/pages/club-manager/club-manager/club-components/facility-services/facility-services.scss";
+@import "../src/pages/club-manager/club-manager/club-components/language-select/choose-language.scss";
+@import "../src/pages/club-manager/club-manager/club-components/users-permission/users-permission.scss";
+
+//Drawer Components
+@import "../src/pages/club-manager/drawers-manager/primary-drawer/primary-side-drawer.scss";
+@import "../src/pages/club-manager/drawers-manager/secondary-side-drawer/secondary-side-drawer.scss";

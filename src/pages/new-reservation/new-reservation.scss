@@ -1,0 +1,243 @@
+    .form-container {
+        padding-block: 7vh 5vh;
+        flex: 1;
+        min-width: 100%;
+
+        .hours-container {
+            max-width: 85%;
+            flex-wrap: wrap;
+            margin: 0 auto;
+
+            .start-hour-container {
+                max-width: 100%;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                gap: 2%;
+                margin-block: 0 3% !important;
+
+                .start-hour-btn {
+                    align-items: center;
+                    appearance: none;
+                    background-color: #FCFCFD;
+                    border-radius: 4px;
+                    border-width: 0;
+                    box-shadow: rgba(45, 35, 66, 0.2) 0 2px 4px, rgba(45, 35, 66, 0.15) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+                    color: #36395A;
+                    cursor: pointer;
+                    height: 2.5rem;
+                    justify-content: center;
+                    overflow: hidden;
+                    padding-inline: 1rem;
+                    margin-block: 0.2rem;
+                    transition: box-shadow .15s, transform .15s;
+                    user-select: none;
+                    -webkit-user-select: none;
+                    touch-action: manipulation;
+                    white-space: nowrap;
+                    will-change: box-shadow, transform;
+                    font-size: 1rem;
+
+                    &:hover {
+                        box-shadow: rgba(45, 35, 66, 0.3) 0 4px 8px, rgba(45, 35, 66, 0.2) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+                        transform: translateY(-2px);
+                    }
+                }
+
+                button.start-hour-btn.flex.active {
+                    background-color: $accent8;
+                    box-shadow: #262626 0 3px 7px inset;
+                    transform: translateY(2px);
+                    color: $brand;
+                }
+            }
+
+            .MuiFormControl-root {
+                margin-inline: unset !important;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                &>label {
+                    left: unset !important;
+                    right: 2.5rem !important;
+                    transform-origin: top right !important;
+                    margin-left: unset !important;
+
+                    @media (min-width: 1160px) {
+                        right: 4rem !important;
+                    }
+                    @media (min-width: 900px) and (max-width: 1159px) {
+                        right: 3rem !important;
+                    }
+                }
+
+                & .MuiOutlinedInput-notchedOutline {
+                    text-align: right !important;
+                }
+
+                div {
+                    min-width: 5rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+        }
+
+        .court-number-section {
+            align-items: center;
+            max-width: 70%;
+            flex-wrap: wrap;
+            flex: 1;
+            margin-block: 0 5% !important;
+
+            .court-number-container {
+                margin-block-start: 3% !important;
+                justify-content: center;
+                align-items: center;
+                gap: rem(20px);
+                width: 100%;
+                flex-wrap: wrap;
+                flex: 1;
+
+                .court-number-btn {
+                    outline: none;
+                    cursor: pointer;
+                    padding: rem(8px) rem(16px);
+                    border-radius: 4px;
+                    border: 0.1px solid $accent5;
+                    transition: all 0.2s ease;
+                    font-size: calc(1vw + 1vh + 1vmax);
+                    font-weight: 400;
+                    color: $accent2;
+                    text-shadow: 0 1px $font;
+                    background-color: transparent;
+
+                    &:hover {
+                        background-color: $brand;
+                        color: $header;
+                        border: 1px solid transparent;
+                        border-radius: 4px;
+                        cursor: pointer;
+                        font-weight: 500;
+                    }
+
+                    &:active {
+                        background-color: $accent8;
+                        color: $brand;
+                        border: 1px solid $brand;
+                        cursor: pointer;
+                    }
+
+                    &:focus {
+                        background-color: $accent8;
+                        color: $brand;
+                        border: 1px solid $brand;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+        .submit-button {
+            min-width: 50%;
+            max-width: 50%;
+            margin: 0 auto;
+            background-color: $brand;
+            color: $header;
+            border: 1px solid transparent;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: calc(0.8vw + 0.8vh + 1vmax);
+            font-weight: 600;
+            padding: rem(12px) rem(24px);
+            transition: 70ms cubic-bezier(.75, 0, .25, 1);
+
+            &:hover {
+                background-color: $accent8;
+                color: $brand;
+                border: 1px solid $brand;
+                cursor: pointer;
+            }
+        }
+
+        section.date-container.flex {
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+
+            &>div {
+                .muirtl-1jy569b-MuiFormLabel-root-MuiInputLabel-root {
+                    left: unset !important;
+                    right: 0.8rem !important;
+                }
+
+                .muirtl-14s5rfu-MuiFormLabel-root-MuiInputLabel-root {
+                    left: unset !important;
+                    right: 1.2rem !important;
+                }
+            }
+        }
+    }
+
+    .muirtl-1d3z3hw-MuiOutlinedInput-notchedOutline {
+        text-align: right !important;
+    }
+
+
+    .card-type-btn {
+        outline: none;
+        cursor: pointer;
+        padding: rem(8px) rem(16px);
+        border-radius: 4px;
+        border: 0.1px solid $accent5;
+        transition: all 0.2s ease;
+        font-size: calc(0.6vw + 0.4vh + 0.6vmax);
+        font-weight: 400;
+        color: $accent2;
+        text-shadow: 0 1px $font;
+        background-color: transparent;
+        margin-left: 10px;
+        &:hover {
+            background-color: $brand;
+            color: $header;
+            border: 1px solid transparent;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: 500;
+        }
+
+        &:active {
+            background-color: $accent8;
+            color: $brand;
+            border: 1px solid $brand;
+            cursor: pointer;
+        }
+
+        &:focus {
+            background-color: $accent8;
+            color: $brand;
+            border: 1px solid $brand;
+            cursor: pointer;
+        }
+    }
+
+    button.punch-card {
+        border: 2px solid;
+    }
+
+
+    button.cancel-btn {
+        font-size: calc(0.8rem + 0.4vw + 0.4vh);
+        padding: 0.5rem 1.5rem !important;
+    }
+
+    span.optionTennis {
+        font-size: calc(1.2rem);
+    }
+
+    span.optionType {
+        font-size: calc(1.2rem);
+    }

@@ -1,0 +1,155 @@
+.club-hours-box {
+  width: 100%;
+  margin-block: 5vh;
+
+  button.save-btn {
+    width: 33%;
+  }
+
+  .grid-club-hours-component {
+    margin: 0 auto;
+    width: 100%;
+    gap: 1rem;
+  }
+
+  .club-hours-fields-container {
+    width: 100%;
+    gap: 2vw;
+    align-items: baseline;
+
+    div {
+      width: 100%;
+    }
+
+    @media (max-width: 650px) {
+      grid-template-columns: 1fr;
+    }
+
+    .text-field-box {
+      width: 100%;
+      min-width: 100%;
+      align-self: baseline;
+    }
+
+    .MuiFormControl-root {
+      margin-inline: unset !important;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      &>label {
+        left: unset !important;
+        right: 1.5rem !important;
+        transform-origin: top right !important;
+        margin-left: unset !important;
+
+        // @media (min-width: 1160px) {
+        //   right: 4rem !important;
+        // }
+        @media (min-width: 900px) and (max-width: 1159px) {
+          // right: 3rem !important;
+        }
+      }
+
+      & .MuiOutlinedInput-notchedOutline {
+        text-align: right !important;
+      }
+
+      div {
+        min-width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+    .MuiFormControl-root {
+      div {
+        &>svg {
+          right: unset !important;
+          left: 7px !important;
+        }
+      }
+    }
+
+    .club-hr {
+      min-width: 100%;
+      gap: 2vh;
+
+      &>div {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+      }
+
+      .form-fields {
+        width: 100%;
+        flex: 1;
+        gap: 2vh;
+
+        .select-fields {
+          width: 100%;
+          flex: 1;
+          gap: 2vw;
+
+          div {
+            &:first-child {
+              margin-left: auto;
+              width: 10rem;
+              flex: 1;
+            }
+          }
+
+          div:last-child {
+            margin-right: auto;
+          }
+        }
+      }
+    }
+  }
+}
+
+.club-hours-actions {
+  gap: 1rem;
+
+  .component-save-btn {
+    width: 8rem;
+    // width: 100%;
+    // height: 100%;
+    border-radius: 4px;
+    background-color: #c9db39;
+    color: #1d1d1d;
+    font-weight: 400;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    padding-block: 0.6rem;
+
+    &:hover {
+      background-color: #1d1d1d;
+      color: #c9db39;
+    }
+  }
+}
+
+.save-btn {
+  width: 8rem;
+  height: 100%;
+  border-radius: 4px;
+  background-color: #c9db39;
+  color: #1d1d1d;
+  font-weight: 400;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  padding-block: 1rem;
+  margin-block-start: 0.4rem;
+
+  &:hover {
+    background-color: #1d1d1d;
+    color: #c9db39;
+  }
+}

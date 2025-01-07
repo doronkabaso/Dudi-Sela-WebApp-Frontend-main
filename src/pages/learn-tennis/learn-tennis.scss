@@ -1,0 +1,113 @@
+.academy-info {
+    margin-block: 5vh;
+
+    @media (min-width: 320px) and (max-width: 720px) {
+        align-items: center;
+        text-align: center;
+    }
+
+    article {
+        padding-block: 1em;
+    }
+
+    h2 {
+        margin-block: unset;
+        font-size: calc(1vw + 1vh + 1vmin);
+        line-height: calc(2.5vh + 3vmin);
+    }
+
+    p {
+        margin-block: unset;
+        font-size: calc(0.8vw + 0.8vh + 0.6vmin);
+        line-height: calc(1.5vh + 1.5vmin);
+    }
+}
+
+.contact-link {
+    gap: 3rem;
+    text-decoration: none;
+    max-width: fit-content;
+    margin-block: 2rem;
+
+    .open-popup-join {
+        gap: 1rem;
+        text-decoration: none;
+        min-width: 30%;
+        // margin-left: auto;
+        background-color: $brand;
+        color: $header;
+        border: 1px solid transparent;
+        border-radius: 4px;
+        cursor: pointer;
+        // font-size: calc(0.8rem + 0.8vw);
+        font-weight: 600;
+        padding: rem(12px) rem(24px);
+        transition: 70ms cubic-bezier(.75, 0, .25, 1);
+
+        @media (min-width: 721px) and (max-width: 1124px) {
+            min-width: 25%;
+            margin: 0 auto;
+            // margin-right: 0;
+            margin-block: rem(12px) rem(24px);
+        }
+
+        @media (min-width: 320px) and (max-width: 720px) {
+            min-width: 40%;
+            margin: 0 auto;
+            // margin-right: 0;
+            margin-block: rem(12px) rem(24px);
+        }
+
+        &:hover {
+            background-color: $accent8;
+            color: $brand;
+            border: 1px solid $brand;
+            cursor: pointer;
+        }
+    }
+}
+
+.slide-images {
+    .slider-container {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+
+        @media (min-width: 320px) and (max-width: 720px) {
+            padding-block: calc(32px + 1.5625vw);
+        }
+
+        .slider {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: unset;
+            max-width: 80%;
+            max-height: 80%;
+            overflow: hidden;
+
+            @media (min-width: 320px) and (max-width: 720px) {
+                max-width: unset;
+                max-height: unset;
+            }
+
+            .slider-img {
+                width: 80%;
+                height: 80%;
+
+                @media (min-width: 320px) and (max-width: 720px) {
+                    width: unset;
+                    height: unset;
+                }
+
+                img {
+                    width: 100%;
+                    min-height: 100%;
+                    border-radius: 7px;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}

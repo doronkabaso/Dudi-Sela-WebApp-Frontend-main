@@ -1,0 +1,110 @@
+.coaches-container {
+    padding-block: rem(45px);
+    position: relative;
+    background-color: $background;
+
+    h2 {
+        text-align: center;
+        padding-bottom: rem(30px);
+        color: $header;
+        font-size: calc(rem(32px) + 1vw);
+    }
+
+    .coaches-list {
+        zoom: 1;
+        display: grid;
+        grid-auto-flow: row dense;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+        padding-inline: calc((100vw - 98%) / 2);
+        align-items: center;
+        justify-content: center;
+        gap: 2vw;
+        grid-template-areas:
+            "sela ben-zvi zirkin werthaimer"
+            "lior asana saphir sipris";
+
+        @media (min-width:901px) and (max-width: 1200px) {
+            padding-inline: calc(100vw - 100%);
+        }
+
+        @media (min-width:721px) and (max-width: 900px) {
+            padding-inline: calc(100vw - 105%);
+        }
+
+        & .slide {
+            max-height: 100%;
+            aspect-ratio: 1 / 1.4;
+            cursor: pointer;
+            filter: saturate(.8);
+            overflow: hidden;
+            transition: all 0.45s ease;
+            background-color: #fff;
+            color: #fff;
+            overflow: hidden;
+            position: relative;
+            text-align: center;
+            width: 100%;
+
+            &:nth-child(1) img {
+                object-position: 10% 50%;
+            }
+
+            &:nth-child(3) img {
+                object-position: 85% 50%;
+            }
+
+            &:nth-child(6) img {
+                object-position: 0 50%;
+            }
+
+            & img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: all 0.45s ease;
+            }
+
+            &:hover>img {
+                scale: 1.1;
+            }
+
+            figcaption {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                align-items: center;
+                z-index: 50;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                line-height: 1.1em;
+                z-index: 2;
+                transition-delay: 0.1s;
+                font-size: 1.5rem;
+                font-family: sans-serif;
+                font-weight: 500;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+
+                .coach-legends {
+                    font-size: calc(1rem + 0.8vw);
+                    font-weight: 500;
+                    position: absolute;
+                    bottom: 1%;
+                    color: #fff;
+                    cursor: pointer;
+                    min-width: 100%;
+                    text-shadow: 0 0 5px #000000;
+
+                    span {
+                        color: #fff;
+                        font-size: calc(0.6rem + 0.4vw);
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,155 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.users-permission-box {
+    width: 100%;
+    height: 100%;
+
+    .users-permission-content {
+        margin: 0 auto;
+        width: 100%;
+        align-items: center;
+        justify-items: center;
+
+        .club-title {
+            color: $header;
+            font-weight: 600;
+            font-size: calc(1rem + 1vw);
+        }
+
+        .users-permission-actions-container {
+            margin-block: 3% !important;
+            gap: rem(20px);
+            width: 100%;
+            flex-wrap: wrap;
+            flex: 1;
+
+            .permission-actions-btn {
+                width: 15%;
+                margin-block-start: 3%;
+                height: 100%;
+                border-radius: 4px;
+                background-color: $brand;
+                border: none;
+                cursor: pointer;
+                transition: all 0.3s ease-in-out;
+                padding: 1rem 1.2rem;
+                font-size: calc(0.6vw + 0.4vh + 0.6vmax);
+                color: $header;
+
+                &:hover {
+                    background-color: $header;
+                    color: $brand;
+                    border-radius: 4px;
+                    cursor: pointer;
+                    font-weight: 500;
+                }
+            }
+        }
+
+        tbody tr td {
+            font-size: calc(0.6rem + 0.6vw);
+            .table-actions-cell {
+                display: flex !important;
+                align-items: center;
+                gap: 1rem;
+                justify-content: space-between;
+                flex-wrap: wrap;
+
+                & button {
+                    width: fit-content;
+                    margin-block-start: 3%;
+                    height: 100%;
+                    border-radius: 4px;
+                    background-color: $brand;
+                    border: none;
+                    cursor: pointer;
+                    transition: all 0.3s ease-in-out;
+                    padding: 0.5rem 0.8rem;
+                    font-size: calc(0.8rem + 0.6vw);
+                    color: $header;
+
+                    &:hover {
+                        background-color: $header;
+                        color: $brand;
+                        border-radius: 4px;
+                        cursor: pointer;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+.user-details-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border: none;
+    box-shadow: 24px;
+    // padding: 16px;
+    max-width: 85vw;
+    min-width: 80vw;
+    max-height: 85vh;
+    min-height: 70vh;
+    padding-block: 1rem;
+
+    .grid-club-component {
+        margin: 0 auto;
+        display: grid;
+        grid-template-rows: 3% auto 1fr 5%;
+        grid-template-columns: 1fr;
+        width: 100%;
+        min-height: 100%;
+        grid-template-areas: "club-title" "grid-divider" "main-component-fields-container" "btn-club-components-container";
+        grid-gap: 1rem;
+        align-items: center;
+        justify-items: center;
+
+        .modal-content {
+            padding: unset;
+            margin-inline: unset;
+            min-width: 100%;
+
+            .modal-header {
+                padding: 0.6rem 1rem;
+                background-color: $brand;
+                min-width: 100%;
+                min-height: 6vh;
+
+                #modal-modal-title {
+                    background-color: transparent;
+                    font-weight: 600;
+                }
+            }
+
+            .modal-body {
+                padding: 0.6rem 1rem;
+
+                .modal-body-text {
+                    text-align: right;
+                    margin-block: unset;
+                    padding-block: 1rem 0.3rem;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .css-1oqqzyl-MuiContainer-root {
+        max-width: unset !important;
+    }
+}

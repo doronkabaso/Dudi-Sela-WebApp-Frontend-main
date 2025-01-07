@@ -1,0 +1,174 @@
+.manager-container {
+    padding-block: 8vh 5vh;
+    min-width: 100%;
+    flex: 1;
+
+    .side-drawer {
+        margin-left: auto;
+    }
+
+    .schedule-daily-btn {
+        & button {
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 1rem 1.2rem;
+            border-radius: 4px;
+            background-color: $brand;
+            // min-width: fit-content;
+            text-align: center;
+            font-size: calc(0.8rem + 0.4vw);
+            white-space: nowrap;
+            // border: none;
+            // outline: none;
+            // padding: 0;
+            // background-color: transparent;
+            // font-size: xx-large;
+
+            &:hover {
+                background-color: $header;
+                color: $brand;
+            }
+        }
+    }
+}
+
+.MuiSelect-select.MuiSelect-outlined.MuiInputBase-input.MuiOutlinedInput-input.css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input {
+    width: 150px;
+}
+
+.submit-button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0.8rem 1.4rem;
+    border-radius: 4px;
+    background-color: $brand;
+    min-width: fit-content;
+    text-align: center;
+    font-size: calc(0.8rem + 0.4vw);
+    white-space: nowrap;
+
+    &:hover {
+        background-color: $header;
+        color: $brand;
+    }
+
+    & button {
+        border: none;
+        outline: none;
+        padding: 0;
+        cursor: pointer;
+        background-color: transparent;
+    }
+}
+
+.submit-button {
+    margin-block-start: 1.5rem;
+}
+
+.schedule-header {
+    min-width: 100%;
+}
+
+img.app-logo {
+    height: 50px;
+    width: 50px;
+}
+
+.schedule {
+    overflow-x: hidden;
+}
+
+img.drawer-icon {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.modal-overlay {
+    .modal-body.modal-language {
+        min-width: 30vw;
+    }
+}
+
+.modal-overlay .modal-box.modal-language {
+    min-width: 40vw !important;
+}
+
+.toggle-primary-drawer,
+.toggle-secondary-drawer {
+    cursor: pointer;
+}
+
+.drawer-back-btn {
+    cursor: pointer;
+    background-color: transparent;
+    max-width: 1.7rem;
+    border: none;
+    outline: none;
+}
+
+.drawer-club-name {
+    font-size: calc(0.8rem + 0.4vw);
+    font-weight: 700;
+    padding-inline: 1rem;
+    text-align: right;
+}
+
+.primary-drawer-list-title {
+    padding-inline: 1rem;
+    font-size: calc(0.8rem + 0.4vw);
+    text-align: right;
+}
+
+.secondary-drawer-list-title span {
+    font-size: calc(0.8rem + 0.4vw);
+    // padding-inline: 1rem;
+    text-align: right;
+}
+
+.today-btn {
+    & button {
+        background-color: transparent;
+        color: $brand;
+        outline: none;
+        border: none;
+        padding: calc(0.4rem + 0.6vw);
+        font-size: calc(1rem + 0.8vw);
+        font-weight: 600;
+        cursor: pointer;
+
+        &:hover {
+            background-color: $brand;
+            color: $header;
+
+        }
+    }
+}
+
+.color-menu {
+    margin-top: 2rem;
+    width: 100%;
+    margin-left: auto;
+    gap: 0.1rem;
+
+    .colorIndex {
+        gap: 2rem;
+
+        .reservationColor {
+            width: 5.9rem;
+            aspect-ratio: 5/1;
+        }
+
+        .reservationLabel {
+            white-space: nowrap;
+            font-size: calc(0.7rem + 0.4vw);
+        }
+    }
+}
+
+.css-axafay-MuiDataGrid-virtualScroller {
+    overflow: auto;
+    height: 100%;
+    position: relative;
+}

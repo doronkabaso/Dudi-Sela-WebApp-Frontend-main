@@ -1,0 +1,186 @@
+.hero {
+    min-width: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+    margin: 0 auto;
+    height: 70vh;
+
+    @media (min-width: 701px) {
+        margin-block-end: 3rem;
+    }
+
+    @media (max-width: 450px) {
+        max-height: 50vh;
+        margin: unset;
+        background-color: $brand;
+    }
+
+    .video {
+        height: 70vh;
+        min-width: 100%;
+        z-index: 0;
+        object-fit: cover;
+
+        @media (max-width: 450px) {
+            display: none;
+        }
+    }
+
+    .hero-text {
+        position: absolute;
+        top: 60%;
+        width: 100%;
+        text-align: center;
+        -webkit-filter: blur(0);
+        -webkit-backface-visibility: hidden;
+        transform: translateY(-80%);
+        text-shadow: 0 -1px 2px rgba(0, 0, 0, .3);
+        z-index: 5;
+
+        @media (max-width: 450px) {
+            top: 20rem;
+        }
+
+        h1 {
+            color: $font;
+            font-size: rem(50px);
+            line-height: 125%;
+            max-width: rem(750px);
+            margin: 0 auto;
+
+            @media (max-width: 450px) {
+                color: $header;
+            }
+        }
+
+        p {
+            color: $font;
+            font-weight: 500;
+            font-size: calc(1.2vw + 1.2vh + 1.5vmin);
+            margin: 2% auto;
+
+            @media (max-width: 450px) {
+                color: $header;
+            }
+        }
+
+        .open-popup-join {
+            font-weight: 700;
+            margin: 2rem 0;
+            background: $accent4;
+            padding: 10px 30px 10px 70px;
+            color: $accent2;
+            font-size: calc(0.8rem + 0.8vw);
+            border-radius: 100vmin;
+            transition: all .5s ease-in-out;
+            border: none;
+            cursor: pointer;
+
+            @media (min-width: 320px) and (max-width: 450px) {
+                margin: none;
+                padding: rem(20px);
+                min-width: 70%;
+                border-radius: 4px;
+                font-size: calc(1rem + 0.8vw);
+                background: $accent2;
+                color: $accent4;
+            }
+
+            &:hover:after,
+            &:active:after,
+            &:focus:after {
+                width: rem(55px);
+                height: rem(55px);
+                margin-right: 2.5%;
+                background-image: url(https://res.cloudinary.com/primap/image/upload/v1669062893/General/Dudi%20Sela/tennisballInvert_kzkuil.png);
+
+
+                @media (min-width: 1101px) {
+                    transform: translate(rem(8px), rem(-15px));
+                }
+
+                @media (min-width: 451px) and (max-width: 1100px) {
+                    transform: translate(rem(-4px), rem(-15px));
+                }
+
+                @media (min-width: 320px) and (max-width: 450px) {
+                    transform: unset;
+                    background-image: unset;
+                    display: none;
+                }
+            }
+
+            &::after {
+                content: "";
+                background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iNzUycHQiIGhlaWdodD0iNzUycHQiIHZlcnNpb249IjEuMSIgdmlld0JveD0iMCAwIDc1MiA3NTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiA8cGF0aCBkPSJtMjk1LjQ1IDYwMC45NSAyMjQuOTUtMjI0Ljk1LTIyNC45NS0yMjQuOTUtNjMuODQgNjMuODQgMTYxLjE2IDE2MS4xMS0xNjEuMTYgMTYxLjExeiIgZmlsbD0iI2ZmZiIvPgo8L3N2Zz4K");
+                height: 20px;
+                width: 20px;
+                position: absolute;
+                transition: all .5s ease-in-out;
+                background-size: 100%;
+                filter: invert(1);
+
+                @media (min-width: 1101px) {
+                    transform: translate(rem(-10px), rem(8px)) rotate(180deg);
+                }
+
+                @media (min-width: 701px) and (max-width: 1100px) {
+                    transform: translate(rem(-10px), rem(5px)) rotate(180deg);
+                }
+
+                @media (min-width: 551px) and (max-width: 700px) {
+                    transform: translate(rem(-10px), rem(3px)) rotate(180deg);
+                }
+
+                @media (min-width: 320px) and (max-width: 450px) {
+                    transform: unset;
+                    background-image: unset;
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .hero-stats {
+        background-color: rgba(255, 255, 255, .3);
+        width: 100%;
+        padding: rem(25px) inherit;
+        position: absolute;
+        z-index: 2;
+        bottom: 0;
+
+        ul {
+            justify-content: space-around;
+            flex: 1;
+
+            li {
+                color: $font;
+                font-size: calc(15px + 0.390625vw);
+                line-height: 120%;
+                text-align: center;
+                padding-inline: 2%;
+                pointer-events: none;
+                cursor: none;
+                user-select: none;
+                -webkit-tap-highlight-color: transparent;
+                -webkit-tap-highlight: hidden;
+
+                strong {
+                    display: none;
+                    padding-block-start: 5%;
+
+                    @media (min-width: 700px) {
+                        font-size: calc(15px + 0.190625vw);
+                        display: block;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+
+        @media (max-width: 450px) {
+            display: none;
+        }
+    }
+}

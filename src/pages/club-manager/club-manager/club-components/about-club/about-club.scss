@@ -1,0 +1,94 @@
+.club-box {
+  width: 100%;
+
+  .grid-club-component {
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: 3% auto 1fr 5%;
+    width: 100%;
+    grid-template-areas: "club-title" "grid-divider" "main-component-fields-container" "save-club-info-btn";
+    align-items: center;
+    justify-items: center;
+
+    .club-title {
+      grid-area: club-title;
+      color: $header;
+      font-weight: 600;
+      font-size: calc(1rem + 1vw);
+      padding: unset;
+    }
+  }
+
+  .main-component-fields-container {
+    grid-area: main-component-fields-container;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+
+    @media (max-width: 650px) {
+      grid-template-columns: 1fr;
+    }
+
+    .text-field-box {
+      width: 100%;
+      min-width: 100%;
+      align-self: baseline;
+    }
+
+    .MuiFormControl-root {
+      margin-inline: unset !important;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      &>label {
+        left: unset !important;
+        right: 1.5rem !important;
+        transform-origin: top right !important;
+        margin-left: unset !important;
+
+        // @media (min-width: 1160px) {
+        //   right: 4rem !important;
+        // }
+        @media (min-width: 900px) and (max-width: 1159px) {
+          // right: 3rem !important;
+        }
+      }
+
+      & .MuiOutlinedInput-notchedOutline {
+        text-align: right !important;
+      }
+
+      div {
+        min-width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+
+  .save-club-info-btn {
+    grid-area: save-club-info-btn;
+    width: 8rem;
+    height: 100%;
+    border-radius: 4px;
+    background-color: $brand;
+    color: $header;
+    font-weight: 600;
+    font-size: calc(1rem + 0.6vw);
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    padding: 1.8rem 2rem;
+
+    &:hover {
+      background-color: #1d1d1d;
+      color: #c9db39;
+    }
+  }
+}

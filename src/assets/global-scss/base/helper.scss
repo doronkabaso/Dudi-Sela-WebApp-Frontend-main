@@ -1,0 +1,39 @@
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.grid {
+    display: grid;
+}
+
+.grid-gap {
+    gap: calc(1vw + 1vh + 1vmin);
+}
+
+.clean-list {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}

@@ -1,0 +1,224 @@
+.reservation-by-instructor {
+  background-color: brown;
+}
+
+.reservation-by-user {
+  background-color: green;
+}
+
+
+button.submit-button.small-margin {
+  margin-right: 20px;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+
+  .modal-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border: none;
+    box-shadow: 24px;
+    // padding: 16px;
+    max-width: 85vw;
+    min-width: 80vw;
+    max-height: 85vh;
+    min-height: 70vh;
+
+    .modal-content {
+      padding: unset;
+      margin-inline: unset;
+      min-width: 100%;
+
+      .modal-header {
+        padding: 0.6rem 1rem;
+        background-color: $brand;
+        min-width: 100%;
+        min-height: 6vh;
+
+        #modal-modal-title {
+          background-color: transparent;
+          font-weight: 600;
+        }
+      }
+
+      .modal-body {
+        padding: 0.6rem 1rem;
+
+        & .schedule-type-container {
+          width: 100%;
+          flex: 1;
+
+          & .toggle-form-container div:nth-child(2) {
+            margin-right: auto;
+
+            & .MuiFormControlLabel-root {
+              margin: 0;
+            }
+          }
+        }
+
+        .modal-body-text {
+          text-align: right;
+          margin-block: unset;
+          padding-block: 1rem 0.3rem;
+        }
+
+        .toggle-schedule-type {
+          gap: 1rem;
+
+          & button {
+            // border: 1px solid $brand;
+            border-radius: 7px;
+            padding-inline: 0;
+            cursor: pointer;
+
+            & div {
+              gap: 3%;
+              padding-inline: 1rem;
+
+              & p {
+                white-space: nowrap;
+              }
+            }
+
+            &:hover {
+              background-color: $header;
+              color: $brand;
+            }
+          }
+
+          & .Mui-selected {
+            background-color: $header;
+            color: $brand;
+          }
+        }
+
+        .date-time-container {
+          min-width: 100%;
+
+          .date-time-select {
+            min-width: 100%;
+            flex: 1;
+
+            .date-container {
+              direction: rtl;
+              text-align: right;
+
+              & div div,
+              & div div button {
+                direction: rtl;
+                text-align: right;
+                display: flex;
+                justify-self: right;
+                justify-content: space-between;
+                flex-direction: row-reverse;
+              }
+            }
+
+            .hours-container {
+              margin-right: auto;
+
+              & .MuiContainer-root {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding-left: 10rem;
+                gap: 1rem;
+              }
+            }
+
+            // .occurrence-container {
+            //   .schedule-occurrence-container {
+            //     .select-occurrence-container {
+            //       .select-occurrence {
+            //         .select-occurrence-item {
+            //             background-color: $header;
+            //             color: $brand;
+            //         }
+            //       }
+            //     }
+            //   }
+            // }
+          }
+
+
+
+          .date-picker {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+.MuiMenu-paper {
+  left: 800px;
+
+  & ul {
+    padding-top: 0;
+    padding-bottom: 0;
+
+    & li.Mui-selected {
+      background-color: #fff;
+
+      &:hover {
+        background-color: $header;
+        color: $brand;
+      }
+    }
+  }
+}
+
+.MuiDataGrid-root.MuiDataGrid-root--densityStandard {
+  direction: ltr !important;
+  transform: rotateY(180deg);
+
+  .MuiButtonBase-root.MuiButton-root.MuiButton-text.MuiButton-textPrimary {
+    transform: rotateY(180deg);
+    color: #141414 !important;
+  }
+
+  .MuiDataGrid-columnHeaderTitle {
+    transform: rotateY(180deg);
+  }
+
+  .MuiDataGrid-cellContent {
+    transform: rotateY(180deg);
+  }
+
+  .MuiDataGrid-footerContainer {
+    transform: rotateY(180deg);
+  }
+
+  .MuiButton-startIcon.MuiButton-iconSizeSmall {
+    margin-left: -2px !important;
+    margin-right: 8px !important;
+  }
+
+  .insider-event {
+    background-color: #90EE90;
+    color: black;
+  }
+  .outsider-event {
+    background-color: #ADD8E6;
+  }
+  .not-available-event {
+    background-color: lightgrey;
+  }
+  .subscriber-event {
+    background-color: #e495d9;
+    color: black;
+  }
+
+}

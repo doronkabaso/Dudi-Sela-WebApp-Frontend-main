@@ -1,0 +1,89 @@
+.club-classes-box {
+    width: 100%;
+    height: 100%;
+
+    .club-classes-content {
+        margin: 0 auto;
+        width: 100%;
+        align-items: center;
+        justify-items: center;
+
+        .club-title {
+            color: $header;
+            font-weight: 600;
+            font-size: calc(1rem + 1vw);
+        }
+
+        & h2 {
+            padding-block-start: 1.2rem;
+        }
+
+        .save-classess-btn-container {
+            padding-block: 1.2rem;
+
+            .save-club-classes-btn {
+                width: 8rem;
+                height: 100%;
+                border-radius: 4px;
+                background-color: $brand;
+                color: $header;
+                font-weight: 600;
+                font-size: calc(1rem + 0.6vw);
+                border: none;
+                cursor: pointer;
+                transition: all 0.3s ease-in-out;
+                padding: 1rem 1.2rem;
+
+                &:hover {
+                    background-color: #1d1d1d;
+                    color: #c9db39;
+                }
+            }
+        }
+
+        .classess-type-container {
+            margin-block: 3% !important;
+            gap: rem(20px);
+            width: 100%;
+            flex-wrap: wrap;
+            flex: 1;
+
+            .class-type-btn {
+                outline: none;
+                cursor: pointer;
+                padding: rem(8px) rem(16px);
+                border-radius: 4px;
+                border: 0.1px solid $accent5;
+                transition: all 0.2s ease;
+                font-size: calc(0.6vw + 0.4vh + 0.6vmax);
+                font-weight: 400;
+                color: $accent2;
+                text-shadow: 0 1px $font;
+                background-color: transparent;
+
+                &:hover {
+                    background-color: $brand;
+                    color: $header;
+                    border: 1px solid transparent;
+                    border-radius: 4px;
+                    cursor: pointer;
+                    font-weight: 500;
+                }
+
+                &:active {
+                    background-color: $accent8;
+                    color: $brand;
+                    border: 1px solid $brand;
+                    cursor: pointer;
+                }
+
+                &:focus {
+                    background-color: $accent8;
+                    color: $brand;
+                    border: 1px solid $brand;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

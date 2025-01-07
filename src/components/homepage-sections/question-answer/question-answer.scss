@@ -1,0 +1,87 @@
+.FAO-container {
+    min-width: 100%;
+    margin-block: 6%;
+
+    h2 {
+        margin-block: 0 5%;
+        font-size: calc(1.8rem + 1vw);
+    }
+
+    .qa {
+        width: 100%;
+        margin-block: 0 5%;
+
+        @media (min-width: 1100px) {
+            width: 80%;
+
+        }
+
+        @mixin states($color: $font) {
+            border-color: $accent5;
+            color: $header;
+            background: $color;
+
+            &:hover {
+                border-color: $color;
+                color: $header;
+            }
+
+            &:active {
+                color: $header;
+                border-color: darken($color, 10%);
+            }
+        }
+
+        details {
+            @include states($font);
+            border: 0.1px solid $accent5;
+            cursor: pointer;
+            transition: background 0.3s;
+            border-radius: 4px;
+            min-height: rem(40px);
+            // max-height: 60px;
+            transform-origin: top center;
+            transform: rotate(0.1deg);
+            transition: all 0.3s;
+
+            ::-webkit-details-marker {
+                display: none;
+            }
+
+            p {
+                color: $header;
+                line-height: 1.5;
+                // margin: 10px 0 0;
+                font-size: calc(0.6rem + 0.4vh + 0.4vmin);
+                padding: 0 5% 4% 8%;
+                white-space: pre-wrap;
+            }
+
+            &[open] {
+                transition: all 0.6s;
+                min-height: 100px;
+            }
+        }
+
+        summary {
+            outline: none;
+            font-size: calc(0.8rem + 0.4vmin);
+            font-weight: 600;
+            padding: 1.5rem 0 1rem 1rem;
+            text-indent: 1rem;
+
+            &:selection {
+                background-color: transparent;
+            }
+
+            &:after {
+                margin-top: 2px;
+                content: "➕";
+                float: left;
+                margin-right: 11px;
+                text-align: center;
+                font-size: 11px;
+            }
+        }
+    }
+}

@@ -1,0 +1,143 @@
+@media (max-width: 900px) {
+    .side-bar {
+        height: 100%;
+        background-color: $header;
+        z-index: 9999;
+        width: 60%;
+        position: fixed;
+        top: 0;
+        padding-top: 20px;
+        z-index: 5000;
+        transition: all 1s easeInOut;
+        box-shadow: 0.1px 0 5px black;
+
+        &.open {
+            right: 0;
+        }
+
+        .menu-header {
+            padding: rem(20px);
+
+            & .logo-sidemenu-container {
+                justify-content: space-between;
+                align-items: center;
+                border-bottom: 0.1px solid $brand;
+
+                & .site-sidemenu-logo {
+                    max-width: 3rem;
+                    padding-block: 1rem;
+                }
+
+                & h2 {
+                    color: $accent5;
+                    left: rem(20px);
+                    cursor: pointer;
+
+                    &:hover {
+                        color: $brand;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            & .user-sign-side-btn {
+                margin-block-start: 40px;
+                padding-inline-start: rem(20px);
+                gap: rem(50px);
+                align-items: flex-start;
+            }
+
+            & h3 {
+                color: $brand;
+                padding-inline-start: rem(20px);
+                text-align: right;
+                margin-block-start: 40px;
+                font-size: calc(1vw + 1vh + 1vmin);
+                font-weight: 500;
+            }
+
+            .open-popup-side-menu {
+                background-color: $brand;
+                color: $header;
+                border: 1px solid transparent;
+                border-radius: 4px;
+                cursor: pointer;
+                font-size: calc(1vw + 1vh + 1vmin);
+                font-weight: 600;
+                padding: rem(12px) rem(24px);
+                text-align: center;
+                text-decoration: none;
+                transition: 70ms cubic-bezier(.75, 0, .25, 1);
+
+                &:hover {
+                    background-color: $accent8;
+                    color: $brand;
+                    border: 1px solid $brand;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .menu-nav {
+        padding: rem(20px) rem(20px) 0 0;
+        height: 100%;
+        overflow: auto;
+        text-align: right;
+
+        & .side-menu-profile {
+            gap: rem(10px);
+
+            .sidebar-item {
+                padding-inline-start: rem(20px);
+                font-size: calc(1vw + 1vh + 1vmin);
+                font-weight: 400;
+                cursor: pointer;
+
+                &:hover {
+                    color: $brand;
+                    font-weight: 600;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 9999;
+
+        &.visible {
+            right: 0;
+            bottom: 0;
+            opacity: 1;
+            transition: opacity 0.4s;
+        }
+    }
+}
+
+@media (min-width: 901px) {
+
+    .side-menu,
+    .hamburger-icon .side-bar,
+    .hamburger-icon,
+    .side-bar.open,
+    .menu-header,
+    .open-popup-side-menu,
+    .user-content,
+    .user-img,
+    .user-img:hover,
+    .menu-nav,
+    .sign,
+    .sign:hover,
+    .overlay,
+    .visible {
+        display: none;
+    }
+}

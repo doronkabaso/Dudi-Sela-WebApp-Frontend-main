@@ -1,0 +1,84 @@
+.slider-container {
+    min-width: 100%;
+    background-color: $lt-grey;
+
+    .slider {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: 1fr;
+        grid-template-areas: 'slider-content slider-img';
+        padding: 5% 0;
+        
+        @media (min-width: 745px) and (max-width: 1024px) {
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+            padding: 5%;
+        }
+        
+        .slider-content {
+            grid-area: slider-content;
+            justify-content: space-between;
+            padding: 0 0 0 8%;
+            
+            @media (min-width: 745px) and (max-width: 1024px) {
+                padding: 0;
+            }
+
+            blockquote {
+                text-align: right;
+                font-size: calc(0.8rem + 0.8vmin);
+                line-height: 1.5rem;
+                color: $header2;
+                margin-block: unset;
+                margin-inline: unset;
+                // padding-block: 2%;
+                font-weight: 400;
+
+                &::before,
+                &::after {
+                    font-size: calc(2vw + 2vh + 3vmin);
+                    color: $brand;
+                    display: inline-block;
+                    vertical-align: bottom;
+                    top: .2em;
+                    position: relative;
+                }
+
+                &::before {
+                    content: open-quote;
+                }
+
+                &::after {
+                    content: close-quote;
+                    line-height: 0;
+                }
+
+            }
+
+            figcaption {
+                font-weight: 300;
+                vertical-align: middle;
+                margin-right: auto;
+                margin-top: unset;
+                // padding: 5% 0;
+                font-size: calc(0.8vw + 0.8vh + 0.4vmin);
+            }
+
+
+        }
+
+        .slider-img {
+            grid-area: slider-img;
+            
+            img {
+                border-radius: 7px;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}

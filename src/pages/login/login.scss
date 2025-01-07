@@ -1,0 +1,19 @@
+input#email.MuiInputBase-input,
+input#password.MuiInputBase-input {
+    direction: ltr;
+}
+
+.login-sign-up-container {
+    margin-block-start: 10rem;
+    &>div {
+        .muirtl-1jy569b-MuiFormLabel-root-MuiInputLabel-root {
+            left: unset !important;
+            right: 0.8rem !important;
+        }
+
+        .muirtl-14s5rfu-MuiFormLabel-root-MuiInputLabel-root {
+            left: unset !important;
+            right: 1.2rem !important;
+        }
+    }
+}
