@@ -1,46 +1,93 @@
-# Getting Started with Create React App and Redux
+# Dudi Sela WebApp Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+This project serves as the frontend for the Dudi Sela WebApp, providing a user-friendly interface for court bookings, user management, and real-time data updates. It is built with React.js and integrates Redux for state management.
+
+## Features
+
+- **Responsive Design**: Optimized for desktop and mobile platforms.
+- **Redux State Management**: Centralized application state for seamless data flow.
+- **Integration with Backend**: Connects with the backend APIs for user authentication and court reservations.
+- **SCSS Styling**: Modular and maintainable styling using SCSS.
+- **Interactive UI**: Dynamic components for managing reservations and users.
+
+## Tech Stack
+
+- **Framework**: React.js
+- **State Management**: Redux Toolkit
+- **Styling**: SCSS
+- **Language**: JavaScript
+- **Build Tool**: Create React App
+
+## Project Structure
+
+```plaintext
+|-- public/               # Static files
+|-- src/                  # Main application source code
+|   |-- components/       # Reusable React components
+|   |-- features/         # Redux slices for application features
+|   |-- styles/           # SCSS files for styling
+|   |-- App.js            # Main application component
+|   |-- index.js          # Entry point for React
+|-- .vscode/              # VS Code settings
+|-- package.json          # Project dependencies
+|-- package-lock.json     # Lock file for npm dependencies
+|-- README.md             # Project documentation
+```
+
+## Setup and Installation
+
+### Prerequisites
+
+- Install Node.js ([Node.js Installation Guide](https://nodejs.org/)).
+- Ensure the backend for the Dudi Sela WebApp is set up and running.
+
+### Steps to Run the Project
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/doronkabaso/Dudi-Sela-WebApp-Frontend-main.git
+   cd Dudi-Sela-WebApp-Frontend-main
+   ```
+
+2. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+3. Start the development server:
+
+   ```bash
+   npm start
+   ```
+
+   The application will run on `http://localhost:3000`.
+
+4. Ensure the backend is running at the specified API URL.
 
 ## Available Scripts
 
-In the project directory, you can run:
+- **`npm start`**: Runs the app in development mode.
+- **`npm test`**: Launches the test runner.
+- **`npm run build`**: Builds the app for production.
 
-### `npm start`
+## About Dudi Sela Tennis Academy
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The Dudi Sela Tennis Academy is a renowned institution committed to developing tennis talent. With state-of-the-art facilities and expert coaching, the academy offers training programs for players of all skill levels, emphasizing sportsmanship, discipline, and excellence.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Future Enhancements
 
-### `npm test`
+- **Integration with Payment Gateway**: Enable online payments for court reservations.
+- **Push Notifications**: Notify users of court availability and reservation updates.
+- **Admin Panel**: Provide an admin dashboard for managing users and courts.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Contributors
 
-### `npm run build`
+- Doron Kabaso
+- Sharon Bello
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Feedback
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+For suggestions or issues, please raise them in the [GitHub repository](https://github.com/doronkabaso/Dudi-Sela-WebApp-Frontend-main/issues).
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
